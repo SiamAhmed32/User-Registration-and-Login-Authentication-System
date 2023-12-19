@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Result</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .alert {
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .ad-container {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .ad-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .ad-text {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Display message when password doesn't match -->
+    <div class="alert alert-danger" role="alert" id="passwordMismatch" style="display: none;">
+      Passwords don't match. Sign up unsuccessful.
+    </div>
+
+    <!-- Advertisement for Brain Skill -->
+    <div class="ad-container">
+      <div class="ad-title">Unlock Your Potential with Brain Skill!</div>
+      <div class="ad-text">
+        Elevate your mind, enhance your skills, and discover new possibilities. Join Brain Skill today for a
+        transformative learning experience.
+      </div>
+      <a href="https://www.facebook.com/brainskill.bd?mibextid=rS40aB7S9Ucbxw6v" class="btn btn-light btn-lg" target="_blank">Explore Brain Skill</a>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom Script -->
+  <script>
+    // Display the password mismatch message
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("passwordMismatch").style.display = "block";
+    });
+  </script>
+
+</body>
+
+</html>
